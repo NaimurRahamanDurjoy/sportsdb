@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsDB</title>
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="w-50 bg-secondary p-2 mx-auto text-center text-white fs-1">Welcome to the SportsDB</h1>
+
+    <!-- Search field -->
+    <div class="input-group mb-3 w-50 mx-auto p-2 my-4">
+        <input id="search-field" type="text" class="form-control" placeholder="Enter your favourate player" aria-label="" aria-describedby="button-addon2">
+        <button onclick="loadSportsDB()" class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    </div>
+
+    <!-- Empty alart message -->
+    <div id="empty-msg" class="w-50 mx-auto my-4 px-2 bg-primary text-white">
+
+    </div>
+
+    <!-- Error message for wrong search -->
+    <div id="error-msg" class="w-50 mx-auto my-4 text-danger">
+
+    </div>
+
+    <!-- Player Details -->
+    <div id="player-details" class="card mb-3 mx-auto" style="max-width: 540px;">
+        
+    </div>
+
+    <!-- Players Section -->
+    <div id="players" class="row row-cols-1 row-cols-md-3 g-2">
+
+    </div>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- own js -->
+    <script src="js/sportsdb.js"></script>
+</body>
+</html>

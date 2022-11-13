@@ -1,0 +1,10 @@
+#users{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.rand-users{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
