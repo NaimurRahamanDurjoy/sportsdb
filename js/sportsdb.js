@@ -1,4 +1,17 @@
+// Loading spinner---------------------------------
+window.addEventListener("load", () => {
+    const loader = document.querySelector('.loader');
+
+    loader.classList.add('loader-hidden');
+
+    loader.addEventListener("transitionend", () => {
+        document.body.removeChild(".loader");
+    })
+})
+
 const loadSportsDB = () => {
+
+
     const searchField = document.getElementById('search-field');
     const searchValue = searchField.value;
 
